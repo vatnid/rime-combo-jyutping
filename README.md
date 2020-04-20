@@ -6,7 +6,7 @@ Schema： ℞ **combo-jyutping**
 
 ## 簡介
 
-宮保粵拼係根據佛振嘅[宮保拼音](https://github.com/rime/home/wiki/ComboPinyin)整出嚟嘅粵語版並擊（chord-typing，即係同時撳多過一個掣）輸入法。
+宮保粵拼由[淵維](https://github.com/vatnid)係以[佛振](https://github.com/lotem)嘅[宮保拼音](https://github.com/rime/home/wiki/ComboPinyin)爲基礎整出嚟嘅粵語版並擊（chord-typing，即係同時撳多過一個掣）輸入法。
 
 ## 安裝
 
