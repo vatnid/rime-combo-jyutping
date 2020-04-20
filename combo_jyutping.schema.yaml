@@ -60,8 +60,8 @@ speller:
   algebra:
     - derive/([123456])//
     # 電腦 keyboard 技術問題，以下合併字典裏面某幾組韻母
-    - derive/aa([ptk])/a$1/   # aap/aat/aak = ap/at/ak
-    - derive/e(m|p|ng|k)/i$1/     # em/ep/eng/ek = im/ip/ing/ik
+    - derive/aa([ptk])/a$1/     # aap/aat/aak = ap/at/ak
+    - derive/e(m|p|ng|k)/i$1/   # em/ep/eng/ek = im/ip/ing/ik
     - erase/^xx$/
 
 chord_composer:
