@@ -1,4 +1,4 @@
-# 宮保粵拼
+# 宮保粵拼 Combo Jyutping
 
 Schema： ℞ **combo_jyutping**
 
