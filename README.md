@@ -102,7 +102,7 @@ Schema： ℞ **combo_jyutping**
 |eot|[oe][-n][入]|[-n][i][yu][入]|||
 |oek|[oe][-ng][入]||||
 |e|[e]||||
-|ei|[e][i]||||
+|ei|[e][i]|[i][u]|||
 |eu|[e][u]||||
 |em|[e][-m]|[i][-m]|||
 |eng|[e][-ng]|[e][-n]|[i][-ng]|[e][-n][i]|
