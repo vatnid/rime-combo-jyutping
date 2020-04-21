@@ -125,6 +125,10 @@ chord_composer:
     - xform/iyna$/Ona/
     - xform/uON$/iO/    # 注意 iO 唔係 Oi，因爲要跟字母次序
 
+    # eng ek 二鍵 shortcut
+    - xform/en$/eN/
+    - xform/ena$/eNa/
+
     # 入聲
     - xform/Na$/k/
     - xform/na$/t/
@@ -159,7 +163,7 @@ chord_composer:
 
     # i yu u 加 j/w 聲母
     - xform/^([iy])/j$1/
-    - xform/^(u)/w$1/
+    - xform/^(u$|u[int])/w$1/
 
     # 齋撳聲母補返 -aa
     - xform/^([bPfdTQlgKhjwzcs]w?)$/$1aa/
@@ -178,18 +182,56 @@ chord_composer:
 
   # 撳完 chord 嘅 display
   output_format:
-    # 加返 apostrophe 畀存在嘅音節（未整完）
-    - "xform/^([bpmfdtlhzcsjw]|ng?|[gk]w?)?([eiou]|aa?|yu|oe|eo)([iumptk]|ng?)?$/$1$2$3'/"
-    - "xform/^(m|ng)$/$1'/"
+    # 加返 apostrophe 畀存在嘅音節
+    #- xform/^([bpmfdtlhzcsjw]|ng?|[gk]w?)?([eiou]|aa?|yu|oe|eo)([iumptk]|ng?)?$/$1$2$3'/
+    # - xform/^()()$/$1$2'/
+
+    # b p m f
+    - xform/^([bpm])(aang?|aa[iutk]?|ang?|a[iut]|eng|ei?|ing?|i[utk]|ong|o[uk]?|ung?|u[itk])$/$1$2'/
+    - xform/^(bam|bak|mak|bek|pek|bi|mi)$/$1'/
+    - xform/^(f)(aa[intk]?|ang?|a[iut]|ei?|ing|i[utk]|ong|ok?|ung?|u[itk]?)$/$1$2'/
+
+    # d t n l
+    - xform/^([dtnl])(aa[imnpt]|ang?|a[iump]|eng|ing?|i[umptk]?|ong|o[iuk]?|eo[it]|ung|uk|yun)$/$1$2'/
+    - xform/^([dnl])(a[tk]|ei?|oeng)$/$1$2'/
+    - xform/^([dtl])(ek|oe|eon|yut)$/$1$2'/
+    - xform/^([dl])(aak|eu|oek)$/$1$2'/
+    - xform/^(naau|laau|laang|lem)$/$1'/
+
+    # g k ng h
+    - xform/^(n?g|[kh])(aa[iumk]?|ang?|a[iumpt]|e|it|ong|o[ik]?|ung|uk)$/$1$2'/
+    - xform/^([gkh])(ei|ing?|i[umpk]|oeng|oe|eoi|yu[nt])$/$1$2'/
+    - xform/^(n?g|h)(aang?|aap|o[un])$/$1$2'/
+    - xform/^([gk])(oek|u[i]?)$/$1$2'/
+    - xform/^([gh])(eng|ot)$/$1$2'/
+    - xform/^(gaat|kaat|ngaat|kak|ngak|hak|keu|kut|gep|gun|kek|hek|gi|hi)$/$1'/
+
+    # gw kw w
+    - xform/^([gk]?w)(aang|aa[ik]?|a[in]|ik|ong|ok)$/$1$2'/
+    - xform/^(g?w)(aa[nt]|ang|at|ing|o)$/$1$2'/
+    - xform/^(wu[int]?)$/$1'/
+
+    # z c s
+    - xform/^([zcs])(aang?|aa[iumptk]?|ang?|a[iumptk]|eng|ek?|ing?|i[umptk]?|ong|o[iuk]?|oeng|oek|eo[int]|ung|uk|yu[nt]?)$/$1$2'/
+    - xform/^(sei)$/$1'/
+
+    # j
+    - xform/^(j)(aang|aa[ipk]?|a[iumnpt]|eng|e|ing?|i[umptk]?|o|oeng|oek|eo[in]|ung|uk|yu[nt]?)$/$1$2'/
+
+    # 零聲母同成音節鼻音
+    - xform/^(aa?)([iumptk]|ng?)?$/$1$2'/
+    - xform/^(ei?)$/$1'/
+    - xform/^(o)([iuk]|ng?)?$/$1$2'/
+    - xform/^(eot|ung|uk|m|ng)$/$1'/
 
     # delete 唔啱規矩嘅音節
-    - "erase/^([A-Za-z]+)$/"
+    - erase/^([A-Za-z]+)$/
 
 
   # 撳 chord 過程中嘅 display
   prompt_format:
     # 加方括號
-    - "xform/^(.*)$/[$1]/"
+    - xform/^(.*)$/[$1]/
 
 translator:
   dictionary: jyut6ping3    # 用 jyut6ping3.dict 嚟做字典
@@ -261,11 +303,9 @@ recognizer:
 # ei    ei
 # eu    eu
 # em    em / ein
-# en    en
-# eng   eN
+# eng   eN / en
 # ep    ema / eina
-# et    ena
-# ek    eNa
+# ek    eNa / ena
 # i     i
 # iu    iy
 # im    im
