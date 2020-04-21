@@ -192,7 +192,7 @@ chord_composer:
     - xform/^(f)(aa[intk]?|ang?|a[iut]|ei?|ing|i[utk]|ong|ok?|ung?|u[itk]?)$/$1$2'/
 
     # d t n l
-    - xform/^([dtnl])(aa[imnpt]|ang?|a[iump]|eng|ing?|i[umptk]?|ong|o[iuk]?|eo[it]|ung|uk|yun)$/$1$2'/
+    - xform/^([dtnl])(aa[imnpt]?|ang?|a[iump]|eng|ing?|i[umptk]?|ong|o[iuk]?|eo[it]|ung|uk|yun)$/$1$2'/
     - xform/^([dnl])(a[tk]|ei?|oeng)$/$1$2'/
     - xform/^([dtl])(ek|oe|eon|yut)$/$1$2'/
     - xform/^([dl])(aak|eu|oek)$/$1$2'/
