@@ -14,7 +14,7 @@ Schema： ℞ **combo_jyutping**
 
 ![Combo Jyutpung layout](https://github.com/vatnid/combo_jyutping/blob/master/layout.png "宮保粵拼 layout")
 
-例如你想打「光復香港時代革命」八個字，首先你要知道每一個音節嘅粵拼，之後就可以開始拆聲母韻母。例如第一個「光」字係 gwong，首先左手要打聲母 gw-，即係 layout 上面嘅 [s][h][g] 三個掣。韻母係 -ong，所以可以直接打 [o][-ng]。所以只要 [s][h][g][o][-ng] 五個掣同時撳，就可以出到 gwong 呢個音節。
+例如你想打「光復香港時代革命」八個字，首先你要知道每一個音節嘅粵拼，之後就可以開始拆聲母韻母。例如第一個「光」字係 gwong，首先左手要打聲母 gw-，即係 layout 上面嘅 [s][h][g] 三個掣。韻母係 -ong，右手可以直接打 [o][-ng]。所以只要 [s][h][g][o][-ng] 五個掣同時撳，就可以出到 gwong 呢個音節。
 
 其他音節可以照板煮碗：  
 光 gwong = [s][h][g][o][-ng]  
