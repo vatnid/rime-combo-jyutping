@@ -1,12 +1,10 @@
 # 宮保粵拼 Combo Jyutping
 
-Schema： ℞ **combo_jyutping**
-
-[Rime](https://rime.im) 宮保粵拼輸入方案
+配方：℞ `combo_jyutping`
 
 ## 簡介
 
-宮保粵拼係由[淵維](https://github.com/vatnid)同理烏以[佛振](https://github.com/lotem)嘅[宮保拼音](https://github.com/rime/home/wiki/ComboPinyin)爲基礎設計嘅並擊（chord typing）粵拼輸入法。
+宮保粵拼係由[淵維](https://github.com/vatnid)同理烏以[佛振](https://github.com/lotem)嘅[宮保拼音](https://github.com/rime/home/wiki/ComboPinyin)爲基礎設計嘅並擊（chord typing）[粵拼](https://www.jyutping.org/jyutping/)輸入法。呢個輸入法要配合 [Rime](https://rime.im) 使用。
 
 咩係 chord typing？一般嘅粵拼輸入法係要逐個字母輸入，就算打得快都要順次序輸入字母。Chord typing 不同之處係你只要撳啱同一個 combination 嘅掣，唔使理次序都可以打到想要嘅音節，就好似彈鋼琴演奏和絃（彈 chord）一樣。
 
@@ -42,7 +40,10 @@ Schema： ℞ **combo_jyutping**
 
 ## 安裝
 
-首先請裝咗粵拼方案（有聲調版）先，然後 download `combo_jyutping.schema.yaml` 呢個 file 放入自己 Rime 嘅 folder 入面，再重新部署就可以。
+1. 安裝 [Rime](https://rime.im/download/)
+2. 安裝咗粵拼方案（有聲調版）
+3. 下載 `combo_jyutping.schema.yaml` 呢個 file
+4. 放入自己 Rime 嘅 folder 入面，再重新部署
 
   - [粵語拼音](https://github.com/rime/rime-cantonese) ℞ **`jyut6ping3`**
 
