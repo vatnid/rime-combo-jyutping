@@ -1,6 +1,6 @@
 # 宮保粵拼
 
-Schema： ℞ **combo-jyutping**
+Schema： ℞ **combo_jyutping**
 
 [Rime](https://rime.im) 宮保粵拼輸入方案
 
