@@ -32,7 +32,7 @@ Schema： ℞ **combo-jyutping**
 
 ## 安裝
 
-首先請裝咗粵拼方案（有聲調版）先，然後 download combo_jyutping.schema.yaml 呢個 file 放入自己 Rime 嘅 folder 入面，再重新部署就可以。
+首先請裝咗粵拼方案（有聲調版）先，然後 download `combo_jyutping.schema.yaml` 呢個 file 放入自己 Rime 嘅 folder 入面，再重新部署就可以。
 
   - [粵語拼音](https://github.com/rime/rime-cantonese) ℞ **`jyut6ping3`**
 
