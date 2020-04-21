@@ -37,3 +37,83 @@ Schema： ℞ **combo_jyutping**
   - [粵語拼音](https://github.com/rime/rime-cantonese) ℞ **`jyut6ping3`**
 
 授權條款：見 [LICENSE](LICENSE)
+
+## 聲韻母按鍵對照
+
+|聲母/韻母|按鍵組合|
+|--------|------|
+|b|[b]|
+|p|[p]|
+|m|[f][b]|
+|f|[f]|
+|d|[d]|
+|t|[t]|
+|n|[l][d]|
+|l|[l]|
+|g|[g]|
+|k|[k]|
+|ng|[h][g]|
+|h|[h]|
+|gw|[s][h][g]|
+|kw|[h][g][k]|
+|z|[z]|
+|c|[c]|
+|s|[s]|
+|j|[gk]|
+|w|[bp]|
+|aa|[aa]|
+|aai|[aa][i]|
+|aau|[aa][u]|
+|aam|[aa][-m]|
+|aan|[aa][-n] / [aa][-m][i]|
+|aang|[aa][-ng] / [aa][-m][i][.]|
+|aap|[aa][-m][入] / [-m][入]|
+|aat|[aa][-n][入] / [aa][-m][i][入] / [-n][入]|
+|aak|[aa][-ng][入] / [aa][-m][i][.][入] / [-ng][入]|
+|ai|[a][i]|
+|au|[a][u]|
+|am|[-m]|
+|an|[-n]|
+|ang|[-ng]|
+|ap|[-m][入]|
+|at|[-n][入]|
+|ak|[-ng][入]|
+|o|[o]|
+|oi|[o][i] / [o][-ng][u][oe]|
+|ou|[o][u]|
+|on|[o][n] / [e][-n][i][yu]|
+|ong|[o][-ng]|
+|ot|[o][n][入] / [e][-n][i][yu][入]|
+|ok|[o][-ng][入]|
+|oe|[oe]|
+|eoi|[oe][i] / [-ng][u][oe]|
+|eon|[oe][-n] / [-n][i][yu]|
+|oeng|[oe][-ng]|
+|eot|[oe][-n][入] / [-n][i][yu][入]|
+|oek|[oe][-ng][入]|
+|e|[e]|
+|ei|[e][i]|
+|eu|[e][u]|
+|em|[e][-m] / [i][-m]|
+|eng|[e][-ng] / [e][-n] / [i][-ng] / [e][-n][i]|
+|ep|[e][-m][入] / [i][-m][入]|
+|ek|[e][-ng][入] / [e][-n][入] / [i][-ng][入] / [e][-n][i][入]|
+|i|[i]|
+|iu|[i][yu]|
+|im|[i][-m]|
+|in|[i][-n]|
+|ing|[i][-ng] / [e][-n][i]|
+|ip|[i][-m][入]|
+|it|[i][-n][入]|
+|ik|[i][-ng][入] / [e][-n][i][入]|
+|u|[u]|
+|ui|[u][oe]|
+|un|[u][-n] / [o][-ng][u]|
+|ung|[u][-ng]|
+|ut|[u][-n][入] / [o][-ng][u][入]|
+|uk|[u][-ng][入]|
+|yu|[yu]|
+|yun|[yu][-n]|
+|yut|[yu][-n][入]|
+|m|[f][b]|
+|ng|[h][g]|
