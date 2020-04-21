@@ -10,9 +10,13 @@ Schema： ℞ **combo_jyutping**
 
 咩係 chord typing？一般嘅粵拼輸入法係要逐個字母輸入，就算打得快都要順次序輸入字母。Chord typing 不同之處係你只要撳啱同一個 combination 嘅掣，唔使理次序都可以打到想要嘅音節，就好似彈鋼琴演奏和絃（彈 chord）一樣。
 
+### 鍵盤配置
+
 呢個係宮保粵拼嘅 layout：
 
 ![Combo Jyutpung layout](https://github.com/vatnid/combo_jyutping/blob/master/layout.png "宮保粵拼 layout")
+
+### 例子
 
 例如你想打「光復香港時代革命」八個字，首先你要知道每一個音節嘅粵拼，之後就可以開始拆聲母韻母。例如第一個「光」字係 gwong，首先左手要打聲母 gw-，即係 layout 上面嘅 [s][h][g] 三個掣。韻母係 -ong，右手可以直接打 [o][-ng]。所以只要 [s][h][g][o][-ng] 五個掣同時撳，就可以出到 gwong 呢個音節。
 
@@ -28,7 +32,13 @@ Schema： ℞ **combo_jyutping**
 
 即係話，只要撳八個「chord」就可以打到八個字出嚟喇！
 
+### 特殊組合
+
 上圖會見到某啲韻母組合有多過一個方法輸入，例如 -ing 可以係 [i][-ng] 或者 [e][-n][i]，因爲打 [i][-ng] 手指要跨行，而且 -ing 係常用韻母，所以加多咗一個唔使跨行嘅 shortcut，可以自由選擇。只有 -iu 同 -ui 唔可以靠單撳 [i][u] 得出，因爲呢個輸入法忽略輸入次序，所以電腦得到 [i][u] 呢個 chord 就唔知道係 -iu 定 -ui，所以一定要用 [i][yu] 同 [u][oe] 兩組 chord。其他韻母組合都可以照常理推斷，不過唔用 shortcut 有機會會因爲按鍵位置導致難以輸入。
+
+另一方面，某啲組合因爲鍵盤 wiring 所限所以普通打法會好難輸入，例如 -aap，所以呢個輸入法將 -aap/aat/aak 同 -ap/at/ak 合流。
+
+仲有其他特殊例子，呢度唔詳列，請參考下面嘅對照表。
 
 ## 安裝
 
