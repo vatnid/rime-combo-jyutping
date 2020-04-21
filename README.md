@@ -13,6 +13,7 @@
 呢個係宮保粵拼嘅 layout：
 
 ![Combo Jyutpung basic layout](https://github.com/vatnid/combo_jyutping/blob/master/layout%20basic.png "宮保粵拼基本 layout")
+*圖一：宮保粵拼基本 layout*
 
 左邊嘅黃色掣係聲母，右邊嘅白色掣係韻母，左手負責打聲母，右手負責打韻母，互相配合。某啲聲母需要用多過一個掣組合，例如 m- 需要用左手同時撳 [f][b] 兩個掣。韻母一般嘅拼法係直接連打韻腹同韻尾，例如 -oeng 就係用右手連打 [oe][-ng] 兩個掣。左右手同時並擊聲母同韻母，即使實際按鍵次序不一，都一樣可以打到相應嘅音節。
 
@@ -36,11 +37,13 @@
 
 上圖會見到某啲韻母組合有多過一個方法輸入，例如 -ing 可以係 [i][-ng] 或者 [e][-n][i]，因爲打 [i][-ng] 手指要跨行，而且 -ing 係常用韻母，所以加多咗一個唔使跨行嘅 shortcut，可以自由選擇。只有 -iu 同 -ui 唔可以靠單撳 [i][u] 得出，因爲呢個輸入法忽略輸入次序，所以電腦得到 [i][u] 呢個 chord 就唔知道係 -iu 定 -ui，所以一定要用 [i][yu] 同 [u][oe] 兩組 chord。其他韻母組合都可以照常理推斷，不過唔用 shortcut 有機會會因爲按鍵位置導致難以輸入。
 
-![Combo Jyutpung full layout](https://github.com/vatnid/combo_jyutping/blob/master/layout%20full.png "宮保粵拼完全 layout")
-
 另一方面，某啲組合因爲鍵盤 wiring 所限所以普通打法會好難輸入，例如 -aap，所以呢個輸入法將 -aap/aat/aak 同 -ap/at/ak 合流。
 
-仲有其他特殊例子，呢度唔詳列，請參考下面嘅對照表。
+仲有其他特殊例子，呢度唔詳列，請參考呢個文件下面嘅對照表。
+
+![Combo Jyutpung full layout](https://github.com/vatnid/combo_jyutping/blob/master/layout%20full.png "宮保粵拼完全 layout")
+*圖二：宮保粵拼完全 layout，包含所有進階打法*
+
 
 ## 安裝
 
