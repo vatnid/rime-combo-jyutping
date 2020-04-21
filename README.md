@@ -20,7 +20,7 @@ Schema： ℞ **combo_jyutping**
 光 gwong = [s][h][g][o][-ng]  
 復 fuk = [f][u][-ng][入] （ ← 呢度韻尾係 -k，鍵盤空間所限所以要打 [-ng] 再加入聲掣 [入]）  
 香 hoeng = [h][oe][-ng]  
-港 gong = [g][oe][-ng]  
+港 gong = [g][o][-ng]  
 時 si = [s][i]  
 代 doi = [d][o][i]  
 革 gaak = [g][aa][-ng][入]  
