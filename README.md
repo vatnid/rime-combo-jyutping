@@ -84,10 +84,10 @@
 |aau|[aa][u]|||
 |aam|[aa][-m]|||
 |aan|[aa][-n]|[aa][-m][i]||
-|aang|[aa][-ng]|[aa][-m][i][.]||
+|aang|[aa][-ng]|||
 |aap|[aa][-m][入]|[-m][入]||
 |aat|[aa][-n][入]|[-n][入]|[aa][-m][i][入]|
-|aak|[aa][-ng][入]|[-ng][入]|[aa][-m][i][.][入]|
+|aak|[aa][-ng][入]|[-ng][入]||
 |ai|[a][i]|||
 |au|[a][u]|||
 |am|[-m]|||
