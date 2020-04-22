@@ -94,6 +94,9 @@ chord_composer:
     - xform/^t/T/   # T = t 聲母
     - xform/^k/K/   # K = k 聲母
 
+    # 聲母 + 入聲 = 音節組合
+    # 待定
+
     # 以下開始轉換韻母
 
     # 輔助 I 掣
