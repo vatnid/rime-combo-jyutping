@@ -99,22 +99,9 @@ chord_composer:
     # 輔助 I 掣
     - xform/I/i/
 
-    # on ot oi 四鍵 shortcut
-    - xform/eiyn$/on/
-    - xform/eyina$/ona/
-    - xform/ouON$/oi/
-
-    # aang aak 四鍵 shortcut
-    - xform/AiEm$/AN/
-    - xform/AiEma$/ANa/
-
-    # ing ik 三鍵 shortcut
-    - xform/ein$/iN/
-    - xform/eina$/iNa/
-
-    # un ut 三鍵 shortcut
-    - xform/ouN$/un/
-    - xform/ouNa$/una/
+    # ok 三鍵 shortcut
+    - xform/ouN$/oNa/
+    - xform/ouNa$/oNa/
 
     # aan aat 三鍵 shortcut
     - xform/Aim/An/
@@ -125,9 +112,9 @@ chord_composer:
     - xform/iyna$/Ona/
     - xform/uON$/iO/    # 注意 iO 唔係 Oi，因爲要跟字母次序
 
-    # eng ek 二鍵 shortcut
-    - xform/en$/eN/
-    - xform/ena$/eNa/
+    # un ut 二鍵 shortcut
+    - xform/en$/un/
+    - xform/ena$/una/
 
     # 入聲
     - xform/Na$/k/
@@ -274,10 +261,10 @@ recognizer:
 # aau   Au
 # aam   Am
 # aan   An / Aim
-# aang  AN / AiEm
+# aang  AN
 # aap   Ama / ma
 # aat   Ana / na / Aima
-# aak   ANa / Na / AiEma
+# aak   ANa / Na
 # ai    ia
 # au    ua
 # am    m
@@ -287,12 +274,12 @@ recognizer:
 # at    na
 # ak    Na
 # o     o
-# oi    oi / ouON
+# oi    oi
 # ou    ou
-# on    on / eiyn
+# on    on
 # ong   oN
-# ot    ona / eyina
-# ok    oNa
+# ot    ona
+# ok    oNa / ouN / ouNa
 # oe    O
 # eoi   iO / uON
 # eon   On / iyn
@@ -303,22 +290,22 @@ recognizer:
 # ei    ei
 # eu    eu / iu
 # em    em / im
-# eng   eN / en / iN / ein
+# eng   eN / iN
 # ep    ema / ima
-# ek    eNa / ena / iNa / eina
+# ek    eNa / iNa
 # i     i
 # iu    iy
 # im    im
 # in    in
-# ing   iN / ein
+# ing   iN
 # ip    ima
 # it    ina
-# ik    iNa / eina
+# ik    iNa
 # u     u
 # ui    uO
-# un    un / ouN
+# un    un / en
 # ung   uN
-# ut    una / ouNa
+# ut    una / ena
 # uk    uNa
 # yu    y
 # yun   yn
