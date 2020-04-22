@@ -88,8 +88,8 @@ chord_composer:
     - xform/^fb/M/  # M = m 聲母
     - xform/^ld/Q/  # Q = n 聲母
     - xform/^hg/G/  # G = ng 聲母
-    - xform/^gk/j/
-    - xform/^bp/w/
+    - xform/^sh/j/
+    - xform/^zf/w/
     - xform/^p/P/   # P = p 聲母
     - xform/^t/T/   # T = t 聲母
     - xform/^k/K/   # K = k 聲母
@@ -102,9 +102,13 @@ chord_composer:
     # 輔助 I 掣
     - xform/I/i/
 
+    # ut 三鍵 shortcut
+    - xform/ein$/una/
+    - xform/eina$/una/  # 對照表唔顯示
+
     # ok 三鍵 shortcut
     - xform/ouN$/oNa/
-    - xform/ouNa$/oNa/
+    - xform/ouNa$/oNa/  # 對照表唔顯示
 
     # aan aat 三鍵 shortcut
     - xform/Aim/An/
@@ -197,7 +201,7 @@ chord_composer:
     - xform/^(gaat|kaat|ngaat|kak|ngak|hak|keu|kut|gep|gun|kek|hek|gi|hi)$/$1'/
 
     # gw kw w
-    - xform/^([gk]?w)(aang|aa[ik]?|a[in]|ik|ong|ok)$/$1$2'/
+    - xform/^([gk]?w)(aang|aa[ik]?|a[ink]|ik|ong|ok)$/$1$2'/
     - xform/^(g?w)(aa[nt]|ang|at|ing|o)$/$1$2'/
     - xform/^(wu[int]?)$/$1'/
 
@@ -256,8 +260,8 @@ recognizer:
 # z     z
 # c     c
 # s     s
-# j     gk
-# w     bp
+# j     sh
+# w     zf
 
 # aa    A
 # aai   Ai
@@ -282,7 +286,7 @@ recognizer:
 # on    on
 # ong   oN
 # ot    ona
-# ok    oNa / ouN / ouNa
+# ok    oNa / ouN
 # oe    O
 # eoi   iO / uON
 # eon   On / iyn
@@ -308,8 +312,8 @@ recognizer:
 # ui    uO
 # un    un / en
 # ung   uN
-# ut    una / ena
-# uk    uNa
+# ut    una / ena / ein / eina
+# uk    uNa / uN
 # yu    y
 # yun   yn
 # yut   yna
