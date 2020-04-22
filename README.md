@@ -10,7 +10,7 @@
 
 ### 鍵盤配置
 
-呢個係宮保粵拼嘅 layout。以下用 [] 嚟標示宮保粵拼鍵盤嘅按鍵，**並唔係 QWERTY 鍵盤本身嘅掣**。
+呢個係宮保粵拼嘅 layout。以下用 `[]` 嚟標示宮保粵拼鍵盤嘅按鍵，**並唔係 QWERTY 鍵盤本身嘅掣**。
 
 ![Combo Jyutpung basic layout](https://github.com/vatnid/combo_jyutping/blob/master/layout%20basic.png "宮保粵拼基本 layout")
 *圖一：宮保粵拼基本 layout（待更新）*
@@ -77,8 +77,8 @@
 |z-|`[z]`|||
 |c-|`[c]`|||
 |s-|`[s]`|||
-|j-|`[gk]`|||
-|w-|`[bp]`|||
+|j-|`[s][h]`|||
+|w-|`[z][f]`|||
 |-aa|`[aa]`|||
 |-aai|`[aa][i]`|||
 |-aau|`[aa][u]`|||
