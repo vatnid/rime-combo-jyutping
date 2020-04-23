@@ -1,31 +1,33 @@
 # 宮保粵拼 Combo Jyutping
 
 配方：℞ `combo_jyutping`
+授權條款：見 [LICENSE](LICENSE)
+
+## 簡介
+
+宮保粵拼係由[淵維](https://github.com/vatnid)同理烏以[佛振](https://github.com/lotem)嘅[宮保拼音](https://github.com/rime/home/wiki/ComboPinyin)爲基礎設計嘅並擊（chord typing）[粵拼](https://www.jyutping.org/jyutping/)輸入法。呢個輸入法要配合 [Rime](https://rime.im) 使用。除咗 QWERTY 鍵盤之外，本方案亦支援 Dvorak 鍵盤。
+
+咩係 chord typing？一般嘅粵拼輸入法係要逐個字母輸入，就算打得快都要順次序輸入字母。Chord typing 不同之處係你只要撳啱同一個 combination 嘅掣，唔使理次序都可以打到想要嘅音節，就好似彈鋼琴演奏和弦（彈 chord）一樣。
 
 ## 安裝
 
 1. 安裝 [Rime](https://rime.im/download/)
 2. 安裝咗粵拼方案（有聲調版）
-3. 下載 `combo_jyutping.schema.yaml` 呢個 file
+3. 下載 `combo_jyutping.schema.yaml`
 4. 放入自己 Rime 嘅 folder 入面，再重新部署
-
   - [粵語拼音](https://github.com/rime/rime-cantonese) ℞ **`jyut6ping3`**
 
-授權條款：見 [LICENSE](LICENSE)
+### Dvorak 鍵盤
 
-## 簡介
+如果你用嘅唔係一般嘅 QWERTY 配置，而係 Dvorak，請打開 `combo_jyutping.schema.yaml`，然後搵出四行末標示住 `# Dvorak (x/4)` 嘅行，移除每行最頭嘅 `# `，再喺附近標示住 `# QWERTY (x/4)` 嘅行數嘅最頭加返 `# `，噉就可以成功轉用爲 Dvorak 版本。
 
-宮保粵拼係由[淵維](https://github.com/vatnid)同理烏以[佛振](https://github.com/lotem)嘅[宮保拼音](https://github.com/rime/home/wiki/ComboPinyin)爲基礎設計嘅並擊（chord typing）[粵拼](https://www.jyutping.org/jyutping/)輸入法。呢個輸入法要配合 [Rime](https://rime.im) 使用。
-
-咩係 chord typing？一般嘅粵拼輸入法係要逐個字母輸入，就算打得快都要順次序輸入字母。Chord typing 不同之處係你只要撳啱同一個 combination 嘅掣，唔使理次序都可以打到想要嘅音節，就好似彈鋼琴演奏和弦（彈 chord）一樣。
-
-### 鍵盤配置
+## 鍵盤配置
 
 呢個係宮保粵拼嘅 layout。以下用 `[]` 嚟標示宮保粵拼鍵盤嘅按鍵，**並唔係 QWERTY 鍵盤本身嘅掣**。
 
 ![Combo Jyutpung basic layout](https://github.com/vatnid/combo_jyutping/blob/master/layout.png "宮保粵拼 layout")
 
-### 輸入方式
+## 輸入方式
 
 宮保粵拼完全唔需要用到尾指，打字嘅時候將兩隻食指放喺 `[g]` 同埋 `[-ng]` 兩個掣上面，有需要就將食指向內移動，唔會有任何向外嘅移動。
 
