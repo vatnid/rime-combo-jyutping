@@ -211,24 +211,24 @@ chord_composer:
     # - xform/^()()$/$1$2'/
 
     # b p m f
-    - xform/^([bpm])(aang?|aa[iutk]?|ang?|a[iut]|eng|ei?|ing?|i[utk]|ong|o[uk]?|ung?|u[itk])$/$1$2'/
-    - xform/^(bam|bak|mak|bek|pek|bi|mi)$/$1'/
-    - xform/^(f)(aa[intk]?|ang?|a[iut]|ei?|ing|i[utk]|ong|ok?|ung?|u[itk]?)$/$1$2'/
+    - xform/^([bpm])(aang?|aa[iutk]?|ang?|a[iutk]|eng|ei?|ing?|i[utk]|ong|o[uk]?|ung?|u[itk])$/$1$2'/
+    - xform/^(bam|bek|pek|bi|mi)$/$1'/
+    - xform/^(f)(aa[intk]?|ang?|a[iutk]|ei?|ing|i[utk]|ong|ok?|ung?|u[itk]?)$/$1$2'/
 
     # d t n l
-    - xform/^([dtnl])(aa[imnpt]?|ang?|a[iump]|eng|ing?|i[umptk]?|ong|o[iuk]?|eo[it]|ung|uk|yun)$/$1$2'/
+    - xform/^([dtnl])(aa[imnpt]?|ang?|a[iumpt]|eng|ing?|i[umptk]?|ong|o[iuk]?|eo[it]|ung|uk|yun)$/$1$2'/
     - xform/^([dnl])(a[tk]|ei?|oeng)$/$1$2'/
     - xform/^([dtl])(ek|oe|eon|yut)$/$1$2'/
     - xform/^([dl])(aak|eu|oek)$/$1$2'/
     - xform/^(naau|laau|laang|lem)$/$1'/
 
     # g k ng h
-    - xform/^(n?g|[kh])(aa[iumk]?|ang?|a[iumpt]|e|it|ong|o[ik]?|ung|uk)$/$1$2'/
+    - xform/^(n?g|[kh])(aa[iumk]?|ang?|a[iumptk]|e|it|ong|o[ik]?|ung|uk)$/$1$2'/
     - xform/^([gkh])(ei|ing?|i[umpk]|oeng|oe|eoi|yu[nt])$/$1$2'/
     - xform/^(n?g|h)(aang?|aap|o[un])$/$1$2'/
     - xform/^([gk])(oek|u[i]?)$/$1$2'/
     - xform/^([gh])(eng|ot)$/$1$2'/
-    - xform/^(gaat|kaat|ngaat|kak|ngak|hak|keu|kut|gep|gun|kek|hek|gi|hi)$/$1'/
+    - xform/^(gaat|kaat|ngaat|keu|kut|gep|gun|kek|hek|gi|hi)$/$1'/
 
     # gw kw w
     - xform/^([gk]?w)(aang|aa[ik]?|a[ink]|ik|ong|ok)$/$1$2'/
@@ -240,7 +240,7 @@ chord_composer:
     - xform/^(sei)$/$1'/
 
     # j
-    - xform/^(j)(aang|aa[ipk]?|a[iumnpt]|eng|e|ing?|i[umptk]?|o|oeng|oek|eo[in]|ung|uk|yu[nt]?)$/$1$2'/
+    - xform/^(j)(aang|aa[ipk]?|a[iumnptk]|eng|e|ing?|i[umptk]?|o|oeng|oek|eo[in]|ung|uk|yu[nt]?)$/$1$2'/
 
     # 零聲母同成音節鼻音
     - xform/^(aa?)([iumptk]|ng?)?$/$1$2'/
