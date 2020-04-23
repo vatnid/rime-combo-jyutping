@@ -60,30 +60,44 @@ speller:
   algebra:
     - derive/([123456])//
     # 電腦 keyboard 技術問題，以下合併字典裏面某幾組韻母
-    - derive/aa([ptk])/a$1/     # aap/aat/aak = ap/at/ak
+    - derive/aa([ptk])/a$1/       # aap/aat/aak = ap/at/ak
     - derive/e(u|m|ng|p|k)/i$1/   # eu/em/eng/ep/ek = iu/im/ing/ip/ik
     - erase/^xx$/
 
 chord_composer:
   # 字母表，包含用嚟撳 chord 嘅掣
   # 撳掣雖然有先後，但係撳 chord 嗰陣，一律以字母表嘅順序排列
-  alphabet: "swxdecfrvgtbhynki,lo.jum "
+
+  alphabet: "swxdecfrvgtbhynki,lo.jum "     # QWERTY (1/4)
+  # alphabet: "o,qe.jupkiyxdbftcwnrvhgm "     # Dvorak (1/4)
+
   # 拼寫運算規則，將一組 chord 嘅編碼轉換爲拼音音節
   algebra:
-    # 將 physical keyboard 嘅字符對應宮保粵拼 layout 嘅字母
-    - 'xlit|swxdecfrvgtbhynki,lo.jum |sczhlfgdbktpoeAuiIOyENnma|'
 
-    # |s|w|x|d|e|c|f|r|v|g|t|b|h|y|n|k|i|,|l|o|.|j|u|m| |  # physical keyboard
+    # 將物理鍵盤嘅字符對應宮保粵拼嘅 layout
+
+    # |s|w|x|d|e|c|f|r|v|g|t|b|h|y|n|k|i|,|l|o|.|j|u|m| |  # QWERTY
     # |s|c|z|h|l|f|g|d|b|k|t|p|o|e|A|u|i|I|O|y|E|N|n|m|a|  # 宮保粵拼
+    # |o|,|q|e|.|j|u|p|k|i|y|x|d|b|f|t|c|w|n|r|v|h|g|m| |  # Dvorak
+
+    - xlit|swxdecfrvgtbhynki,lo.jum |sczhlfgdbktpoeAuiIOyENnma|   # QWERTY (2/4)
+    # - xlit|o,qe.jupkiyxdbftcwnrvhgm |sczhlfgdbktpoeAuiIOyENnma|   # Dvorak (2/4)
 
 
     # 單撳空白、逗號、句號
     - xform/^a$/ /
-    - xform/^I$/,/
-    - xform/^E$/./
+    - xform/^I$/,/   # QWERTY (3/4)
+    - xform/^E$/./   # QWERTY (4/4)
+    # - xform/^c$/,/   # Dvorak (3/4)
+    # - xform/^l$/./   # Dvorak (4/4)
+
+
+    # 輔助 I 掣
+    - xform/I/i/
+
 
     # 聲母
-    - xform/^hgk/kw/
+    - xform/^hgk/Kw/
     - xform/^shg/gw/
     - xform/^fb/M/  # M = m 聲母
     - xform/^ld/Q/  # Q = n 聲母
@@ -94,13 +108,29 @@ chord_composer:
     - xform/^t/T/   # T = t 聲母
     - xform/^k/K/   # K = k 聲母
 
-    # 聲母 + 入聲 = 音節組合
-    # 待定
+
+    # 聲母 + 入聲 = 音節 shortcut
+    - xform/^ba$/bin/   # bin
+    - xform/^Pa$/puNa/  # puk
+    - xform/^Ma$/Mou/   # mou
+    - xform/^fa$/fAn/   # faan
+    - xform/^da$/dou/   # dou
+    - xform/^Ta$/TuN/   # tung
+    - xform/^Qa$/Qei/   # nei
+    - xform/^la$/lia/   # lai
+    - xform/^ga$/ge/    # ge
+    - xform/^Ka$/KiO/   # keoi
+    - xform/^Ga$/Go/    # ngo
+    - xform/^ha$/hia/   # hai
+    - xform/^gwa$/gwo/  # gwo
+    - xform/^Kwa$/Kwn/  # kwan
+    - xform/^za$/zua/   # zau
+    - xform/^ca$/cin/   # cin
+    - xform/^sa$/sin/   # sin
+    - xform/^ja$/jua/   # jau
+    - xform/^wa$/wuO/   # wui
 
     # 以下開始轉換韻母
-
-    # 輔助 I 掣
-    - xform/I/i/
 
     # ut 三鍵 shortcut
     - xform/ein$/una/
@@ -253,8 +283,8 @@ recognizer:
 # l     l
 # g     g
 # k     k
-# h     h
 # ng    hg
+# h     h
 # gw    shg
 # kw    hgk
 # z     z
