@@ -2,6 +2,17 @@
 
 配方：℞ `combo_jyutping`
 
+## 安裝
+
+1. 安裝 [Rime](https://rime.im/download/)
+2. 安裝咗粵拼方案（有聲調版）
+3. 下載 `combo_jyutping.schema.yaml` 呢個 file
+4. 放入自己 Rime 嘅 folder 入面，再重新部署
+
+  - [粵語拼音](https://github.com/rime/rime-cantonese) ℞ **`jyut6ping3`**
+
+授權條款：見 [LICENSE](LICENSE)
+
 ## 簡介
 
 宮保粵拼係由[淵維](https://github.com/vatnid)同理烏以[佛振](https://github.com/lotem)嘅[宮保拼音](https://github.com/rime/home/wiki/ComboPinyin)爲基礎設計嘅並擊（chord typing）[粵拼](https://www.jyutping.org/jyutping/)輸入法。呢個輸入法要配合 [Rime](https://rime.im) 使用。
@@ -12,8 +23,7 @@
 
 呢個係宮保粵拼嘅 layout。以下用 `[]` 嚟標示宮保粵拼鍵盤嘅按鍵，**並唔係 QWERTY 鍵盤本身嘅掣**。
 
-![Combo Jyutpung basic layout](https://github.com/vatnid/combo_jyutping/blob/master/layout%20basic.png "宮保粵拼基本 layout")
-*圖一：宮保粵拼基本 layout（待更新）*
+![Combo Jyutpung basic layout](https://github.com/vatnid/combo_jyutping/blob/master/layout.png "宮保粵拼 layout")
 
 ### 輸入方式
 
@@ -45,16 +55,17 @@
 
 仲有其他特殊例子，呢度唔詳列，請參考呢個文件下面嘅對照表。
 
-## 安裝
+### 進階技巧
 
-1. 安裝 [Rime](https://rime.im/download/)
-2. 安裝咗粵拼方案（有聲調版）
-3. 下載 `combo_jyutping.schema.yaml` 呢個 file
-4. 放入自己 Rime 嘅 folder 入面，再重新部署
+除咗普通聲母、韻母組合之外，某啲音節喺宮保粵拼可以用更便捷嘅方式輸入。如果齋撳聲母，就會得出該聲母加 -aa 韻母（除咗兩個成音節鼻音 m 同 ng），例如就噉撳 `[s]` 會出現 saa。另外，輸入聲母再加入聲鍵（空白）亦都可以輸入某啲常用音節，例如 `[g][入]` 係 ge，`[d][入]` 係 dou。下表詳細列出所有聲母加入聲鍵嘅組合：
 
-  - [粵語拼音](https://github.com/rime/rime-cantonese) ℞ **`jyut6ping3`**
-
-授權條款：見 [LICENSE](LICENSE)
+|聲母|常用音節|聲母|常用音節|聲母|常用音節|聲母|常用音節|
+|---|-------|---|-------|---|-------|---|-------|
+|b|bin|p|puk|m|mou|f|faan|
+|d|dou|t|tung|n|nei|l|lai|
+|g|ge|k|keoi|ng|ngo|h|hai|
+|gw|gwo|kw|kwan|j|jau|w|wui|
+|z|zau|c|cin|s|sin|
 
 ## 聲韻母按鍵對照
 
