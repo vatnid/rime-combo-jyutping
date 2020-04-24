@@ -12,7 +12,7 @@
 ## 安裝
 
 1. 安裝 [Rime](https://rime.im/download/)
-2. 安裝咗粵拼方案（有聲調版）
+2. 安裝[粵拼方案（有聲調版）](https://github.com/rime/rime-cantonese)
 3. 下載 `combo_jyutping.schema.yaml`
 4. 放入自己 Rime 嘅 folder 入面，再重新部署
   - [粵語拼音](https://github.com/rime/rime-cantonese) ℞ **`jyut6ping3`**
