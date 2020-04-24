@@ -18,7 +18,7 @@
 
 ### Dvorak 鍵盤
 
-如果你用嘅唔係一般嘅 QWERTY 配置，而係 Dvorak，請打開 `combo_jyutping.schema.yaml`，然後搵出四行末標示住 `# Dvorak (x/4)` 嘅行，移除每行最頭嘅 `# `，再喺附近三行標示住 `# QWERTY (x/3)` 嘅最頭加返 `# `，噉就可以成功轉用爲 Dvorak 版本。（[圖示](https://raw.githubusercontent.com/vatnid/combo_jyutping/master/dvorak%20tutorial.png)）
+如果你用嘅唔係一般嘅 QWERTY 配置，而係 Dvorak，請打開 `combo_jyutping.schema.yaml`，然後搵出四行末標示住 `# Dvorak (x/4)` 嘅行，移除每行最頭嘅 `# `，再喺附近三行標示住 `# QWERTY (x/3)` 嘅最頭加返 `# `，噉就可以成功轉用爲 Dvorak 版本。（[圖示](https://raw.githubusercontent.com/vatnid/combo_jyutping/master/dvorak-tutorial.png)）
 
 ## 鍵盤配置
 
