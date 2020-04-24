@@ -60,8 +60,9 @@ speller:
   algebra:
     - derive/([123456])//
     # 電腦 keyboard 技術問題，以下合併字典裏面某幾組韻母
-    - derive/aa([ptk])/a$1/       # aap/aat/aak = ap/at/ak
-    - derive/e(u|m|ng|p|k)/i$1/   # eu/em/eng/ep/ek = iu/im/ing/ip/ik
+    - derive/aa([ptk])/a$1/         # aap/aat/aak = ap/at/ak
+    - derive/ei/i/                  # ei = i
+    - derive/e(u|m|ng?|p|t|k)/i$1/  # e- = i-
     - erase/^xx$/
 
 chord_composer:
@@ -211,9 +212,9 @@ chord_composer:
     # - xform/^()()$/$1$2'/
 
     # b p m f
-    - xform/^([bpm])(aang?|aa[iutk]?|ang?|a[iutk]|eng|ei?|ing?|i[utk]|ong|o[uk]?|ung?|u[itk])$/$1$2'/
-    - xform/^(bam|bek|pek|bi|mi)$/$1'/
-    - xform/^(f)(aa[intk]?|ang?|a[iutk]|ei?|ing|i[utk]|ong|ok?|ung?|u[itk]?)$/$1$2'/
+    - xform/^([bpm])(aang?|aa[iutk]?|ang?|a[iutk]|eng|ei?|ing?|i[utk]?|ong|o[uk]?|ung?|u[itk])$/$1$2'/
+    - xform/^(bam|bek|pek)$/$1'/
+    - xform/^(f)(aa[intk]?|ang?|a[iutk]|ei?|ing|i[utk]?|ong|ok?|ung?|u[itk]?)$/$1$2'/
 
     # d t n l
     - xform/^([dtnl])(aa[imnpt]?|ang?|a[iumpt]|eng|ing?|i[umptk]?|ong|o[iuk]?|eo[it]|ung|uk|yun)$/$1$2'/
@@ -224,16 +225,16 @@ chord_composer:
 
     # g k ng h
     - xform/^(n?g|[kh])(aa[iumk]?|ang?|a[iumptk]|e|it|ong|o[ik]?|ung|uk)$/$1$2'/
-    - xform/^([gkh])(ei|ing?|i[umpk]|oeng|oe|eoi|yu[nt])$/$1$2'/
+    - xform/^([gkh])(ei|ing?|i[umpk]?|oeng|oe|eoi|yu[nt])$/$1$2'/
     - xform/^(n?g|h)(aang?|aap|o[un])$/$1$2'/
     - xform/^([gk])(oek|u[i]?)$/$1$2'/
     - xform/^([gh])(eng|ot)$/$1$2'/
-    - xform/^(gaat|kaat|ngaat|keu|kut|gep|gun|kek|hek|gi|hi)$/$1'/
+    - xform/^(kaat|n?gaat|keu|kut|gep|gun|[kh]ek|[gh]i)$/$1'/
 
     # gw kw w
     - xform/^([gk]?w)(aang|aa[ik]?|a[ink]|ik|ong|ok)$/$1$2'/
-    - xform/^(g?w)(aa[nt]|ang|at|ing|o)$/$1$2'/
-    - xform/^(wu[int]?)$/$1'/
+    - xform/^(g?w)(aa[nt]|ang|at|ing|[eo])$/$1$2'/
+    - xform/^(wu[int]?|gwi)$/$1'/
 
     # z c s
     - xform/^([zcs])(aang?|aa[iumptk]?|ang?|a[iumptk]|eng|ek?|ing?|i[umptk]?|ong|o[iuk]?|oeng|oek|eo[int]|ung|uk|yu[nt]?)$/$1$2'/
