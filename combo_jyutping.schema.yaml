@@ -216,7 +216,7 @@ chord_composer:
     - xform/^(bam|bek|pek)$/$1'/
     - xform/^(f)(aa[intk]?|ang?|a[iutk]|ei?|ing|i[utk]?|ong|ok?|ung?|u[itk]?)$/$1$2'/
     - xform/^([bpm])u'$/$1ou'/
-    - xform/^([bpmf])i'$/$1ei/
+    - xform/^([bpmf])i'$/$1ei'/
 
     # d t n l
     - xform/^([dtnl])(aa[imnpt]?|ang?|a[iumpt]|eng|ing?|i[umptk]?|ong|o[iuk]?|eo[it]|ung|uk?|yun)$/$1$2'/
