@@ -1,6 +1,6 @@
 # 宮保粵拼 Combo Jyutping
 
-配方：℞ `combo_jyutping`  
+配方：℞ `combo-jyutping`  
 授權條款：見 [LICENSE](LICENSE)
 
 ## 簡介
