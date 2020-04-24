@@ -62,6 +62,7 @@ speller:
     # 電腦 keyboard 技術問題，以下合併字典裏面某幾組韻母
     - derive/aa([ptk])/a$1/         # aap/aat/aak = ap/at/ak
     - derive/ei/i/                  # ei = i
+    - derive/ou/u/                  # ou = u
     - derive/e(u|m|ng?|p|t|k)/i$1/  # e- = i-
     - erase/^xx$/
 
@@ -69,26 +70,25 @@ chord_composer:
   # 字母表，包含用嚟撳 chord 嘅掣
   # 撳掣雖然有先後，但係撳 chord 嗰陣，一律以字母表嘅順序排列
 
-  alphabet: "swxdecfrvgtbhynki,lo.jum "     # QWERTY (1/4)
-  # alphabet: "o,qe.jupkiyxdbftcwnrvhgm "     # Dvorak (1/4)
+  alphabet: "swxdecfrvgtbhynki,lojum "     # QWERTY (1/3)
+  # alphabet: "o,qe.jupkiyxdbftcwnrhgm "     # Dvorak (1/4)
 
   # 拼寫運算規則，將一組 chord 嘅編碼轉換爲拼音音節
   algebra:
 
     # 將物理鍵盤嘅字符對應宮保粵拼嘅 layout
 
-    # |s|w|x|d|e|c|f|r|v|g|t|b|h|y|n|k|i|,|l|o|.|j|u|m| |  # QWERTY
-    # |s|c|z|h|l|f|g|d|b|k|t|p|o|e|A|u|i|I|O|y|E|N|n|m|a|  # 宮保粵拼
-    # |o|,|q|e|.|j|u|p|k|i|y|x|d|b|f|t|c|w|n|r|v|h|g|m| |  # Dvorak
+    # |s|w|x|d|e|c|f|r|v|g|t|b|h|y|n|k|i|,|l|o|j|u|m| |  # QWERTY
+    # |s|c|z|h|l|f|g|d|b|k|t|p|o|e|A|u|i|I|O|y|N|n|m|a|  # 宮保粵拼
+    # |o|,|q|e|.|j|u|p|k|i|y|x|d|b|f|t|c|w|n|r|h|g|m| |  # Dvorak
 
-    - xlit|swxdecfrvgtbhynki,lo.jum |sczhlfgdbktpoeAuiIOyENnma|   # QWERTY (2/4)
-    # - xlit|o,qe.jupkiyxdbftcwnrvhgm |sczhlfgdbktpoeAuiIOyENnma|   # Dvorak (2/4)
+    - xlit|swxdecfrvgtbhynki,lojum |sczhlfgdbktpoeAuiIOyNnma|   # QWERTY (2/3)
+    # - xlit|o,qe.jupkiyxdbftcwnrhgm |sczhlfgdbktpoeAuiIOyNnma|   # Dvorak (2/4)
 
 
     # 單撳空白、逗號、句號
     - xform/^a$/ /
-    - xform/^I$/,/   # QWERTY (3/4)
-    - xform/^E$/./   # QWERTY (4/4)
+    - xform/^I$/,/   # QWERTY (3/3)
     # - xform/^c$/,/   # Dvorak (3/4)
     # - xform/^l$/./   # Dvorak (4/4)
 
@@ -212,24 +212,30 @@ chord_composer:
     # - xform/^()()$/$1$2'/
 
     # b p m f
-    - xform/^([bpm])(aang?|aa[iutk]?|ang?|a[iutk]|eng|ei?|ing?|i[utk]?|ong|o[uk]?|ung?|u[itk])$/$1$2'/
+    - xform/^([bpm])(aang?|aa[iutk]?|ang?|a[iutk]|eng|ei?|ing?|i[utk]?|ong|o[uk]?|ung?|u[itk]?)$/$1$2'/
     - xform/^(bam|bek|pek)$/$1'/
     - xform/^(f)(aa[intk]?|ang?|a[iutk]|ei?|ing|i[utk]?|ong|ok?|ung?|u[itk]?)$/$1$2'/
+    - xform/^([bpm])u'$/$1ou'/
+    - xform/^([bpmf])i'$/$1ei/
 
     # d t n l
-    - xform/^([dtnl])(aa[imnpt]?|ang?|a[iumpt]|eng|ing?|i[umptk]?|ong|o[iuk]?|eo[it]|ung|uk|yun)$/$1$2'/
+    - xform/^([dtnl])(aa[imnpt]?|ang?|a[iumpt]|eng|ing?|i[umptk]?|ong|o[iuk]?|eo[it]|ung|uk?|yun)$/$1$2'/
     - xform/^([dnl])(a[tk]|ei?|oeng)$/$1$2'/
     - xform/^([dtl])(ek|oe|eon|yut)$/$1$2'/
     - xform/^([dl])(aak|eu|oek)$/$1$2'/
     - xform/^(naau|laau|laang|lem)$/$1'/
+    - xform/^([dtnl])u'$/$1ou'/
+    - xform/^([l])i'$/$1ei'/
 
     # g k ng h
     - xform/^(n?g|[kh])(aa[iumk]?|ang?|a[iumptk]|e|it|ong|o[ik]?|ung|uk)$/$1$2'/
     - xform/^([gkh])(ei|ing?|i[umpk]?|oeng|oe|eoi|yu[nt])$/$1$2'/
-    - xform/^(n?g|h)(aang?|aap|o[un])$/$1$2'/
+    - xform/^(n?g|h)(aang?|aap|o[un]|u)$/$1$2'/
     - xform/^([gk])(oek|u[i]?)$/$1$2'/
     - xform/^([gh])(eng|ot)$/$1$2'/
     - xform/^(kaat|n?gaat|keu|kut|gep|gun|[kh]ek|[gh]i)$/$1'/
+    - xform/^(ng|h)u'$/$1ou'/
+    - xform/^([gkh])i'$/$1ei'/
 
     # gw kw w
     - xform/^([gk]?w)(aang|aa[ik]?|a[ink]|ik|ong|ok)$/$1$2'/
@@ -237,8 +243,9 @@ chord_composer:
     - xform/^(wu[int]?|gwi)$/$1'/
 
     # z c s
-    - xform/^([zcs])(aang?|aa[iumptk]?|ang?|a[iumptk]|eng|ek?|ing?|i[umptk]?|ong|o[iuk]?|oeng|oek|eo[int]|ung|uk|yu[nt]?)$/$1$2'/
+    - xform/^([zcs])(aang?|aa[iumptk]?|ang?|a[iumptk]|eng|ek?|ing?|i[umptk]?|ong|o[iuk]?|oeng|oek|eo[int]|ung|uk?|yu[nt]?)$/$1$2'/
     - xform/^(sei)$/$1'/
+    - xform/^([zcs])u'$/$1ou'/
 
     # j
     - xform/^(j)(aang|aa[ipk]?|a[iumnptk]|eng|e|ing?|i[umptk]?|o|oeng|oek|eo[in]|ung|uk|yu[nt]?)$/$1$2'/
@@ -313,7 +320,7 @@ recognizer:
 # ak    Na
 # o     o
 # oi    oi
-# ou    ou
+# ou    ou / u
 # on    on
 # ong   oN
 # ot    ona
@@ -325,11 +332,12 @@ recognizer:
 # eot   Ona / iyna
 # oek   ONa
 # e     e
-# ei    ei
+# ei    ei / i
 # eu    eu / iu
 # em    em / im
 # eng   eN / iN
 # ep    ema / ima
+# et    ina
 # ek    eNa / iNa
 # i     i
 # iu    iy
