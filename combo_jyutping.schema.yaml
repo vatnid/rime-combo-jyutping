@@ -240,10 +240,9 @@ chord_composer:
     - xform/^([gkh])i'$/$1ei'/
 
     # gw kw w
-    - xform/^([gk]?w)(aang|aa[ik]?|a[ink]|ik|ong|ok)$/$1$2'/
+    - xform/^([gk]?w)(aang|aa[ik]?|a[ink]|ik|ong|ok|u[int]?)$/$1$2'/
     - xform/^(g?w)(aa[nt]|ang|at|ing|[eo])$/$1$2'/
-    - xform/^([gk])(w)(u[int]?)$/$1$3'/
-    - xform/^(wu[int]?|gwi)$/$1'/
+    - xform/^(gwi)$/$1'/
 
     # z c s
     - xform/^([zcs])(aang?|aa[iumptk]?|ang?|a[iumptk]|eng|ek?|ing?|i[umptk]?|ong|o[iuk]?|oeng|oek|eo[int]|ung|uk?|yu[nt]?)$/$1$2'/
