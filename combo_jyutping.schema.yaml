@@ -58,10 +58,13 @@ speller:
   alphabet: zyxwvutsrqponmlkjihgfedcba
   delimiter: " '"
   algebra:
+    - derive/g(u[int]?[123456])/gw$1/
+    - derive/k(u[int]?[123456])/kw$1/
     - derive/([123456])//
     # 合併某幾組韻母
     - derive/aa([ptk])/a$1/         # aap/aat/aak = ap/at/ak
     - derive/ei/i/                  # ei = i
+    - derive/gu(^ng)//
     - derive/ou/u/                  # ou = u
     - derive/e(u|m|ng?|p|t|k)/i$1/  # e- = i-
     - erase/^xx$/
@@ -239,6 +242,7 @@ chord_composer:
     # gw kw w
     - xform/^([gk]?w)(aang|aa[ik]?|a[ink]|ik|ong|ok)$/$1$2'/
     - xform/^(g?w)(aa[nt]|ang|at|ing|[eo])$/$1$2'/
+    - xform/^([gk])(w)(u[int]?)$/$1$3'/
     - xform/^(wu[int]?|gwi)$/$1'/
 
     # z c s
