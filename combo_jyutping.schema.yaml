@@ -243,6 +243,7 @@ chord_composer:
     - xform/^([gk]?w)(aang|aa[ik]?|a[ink]|ik|ong|ok|u[int]?)$/$1$2'/
     - xform/^(g?w)(aa[nt]|ang|at|ing|[eo])$/$1$2'/
     - xform/^(gwi)$/$1'/
+    - xform/^([gk])(w)(u[int])'$/$1$3'/
 
     # z c s
     - xform/^([zcs])(aang?|aa[iumptk]?|ang?|a[iumptk]|eng|ek?|ing?|i[umptk]?|ong|o[iuk]?|oeng|oek|eo[int]|ung|uk?|yu[nt]?)$/$1$2'/
