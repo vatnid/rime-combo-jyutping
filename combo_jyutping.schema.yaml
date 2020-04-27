@@ -269,7 +269,7 @@ chord_composer:
 
 translator:
   preedit_format:
-    - xform/([nls])i'/$1(e)i'/
+    - xform/([dnls])i'/$1(e)i'/
     - xform/(^|')([bpmfdtlgkhzcsjw]|ng?)?(w?)a([ptk])/$1$2$3(a)a$4/
     - xform/gu'/g(o)u'/
     - xform/([gk])wu/$1u/
