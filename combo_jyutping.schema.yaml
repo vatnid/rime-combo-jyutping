@@ -69,14 +69,12 @@ speller:
     - erase/^xx$/
 
 chord_composer:
-  # 字母表，包含用嚟撳 chord 嘅掣
-  # 撳掣雖然有先後，但係撳 chord 嗰陣，一律以字母表嘅順序排列
 
+  # 撳掣雖然有先後，但係撳 chord 嗰陣，一律以字母表嘅順序排列
   alphabet: "swxdecfrvgtbhynki,lojum "
 
-  # 拼寫運算規則，將一組 chord 嘅編碼轉換爲拼音音節
   algebra:
-    
+
     # 將物理鍵盤嘅字符對應宮保粵拼嘅 layout
     # |s|w|x|d|e|c|f|r|v|g|t|b|h|y|n|k|i|,|l|o|j|u|m| |  # QWERTY
     # |s|c|z|h|l|f|g|d|b|k|t|p|o|e|A|u|i|I|O|y|N|n|m|a|  # 宮保粵拼
@@ -84,9 +82,7 @@ chord_composer:
 
     # 單撳空白、逗號、句號
     - xform/^a$/ /
-    - xform/^I$/,/   # QWERTY (3/3)
-    # - xform/^c$/,/   # Dvorak (3/4)
-    # - xform/^l$/./   # Dvorak (4/4)
+    - xform/^I$/,/
 
     # 輔助 I 掣
     - xform/I/i/
