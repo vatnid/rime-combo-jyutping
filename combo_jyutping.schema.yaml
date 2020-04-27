@@ -5,7 +5,7 @@
 schema:
   schema_id: combo_jyutping
   name: 宮保粵拼 # 淵理方案
-  version: "2020.03.27"
+  version: "2020.03.28"
   author:
     - 淵維 <systemx637@gmail.com>   # 方案設計、編程
     - 理烏 <iaskaaca@gmail.com>     # 方案設計、美術
@@ -222,7 +222,7 @@ chord_composer:
     - xform/^([dtl])(ek|oe|eon|yut)$/$1$2'/
     - xform/^([dl])(aak|eu|oek)$/$1$2'/
     - xform/^(naau|laau|laang|lem)$/$1'/
-    - xform/^([dtnl])u'$/$1ou'/
+    - xform/^([dtn])u'$/$1ou'/
     - xform/^([l])i'$/$1ei'/
 
     # g k ng h
@@ -268,7 +268,7 @@ translator:
   preedit_format:
     - xform/([dnls])i'/$1(e)i'/
     - xform/(^|')([bpmfdtlgkhzcsjw]|ng?)?(w?)a([ptk])/$1$2$3(a)a$4/
-    - xform/gu'/g(o)u'/
+    - xform/([lg])u'/$1(o)u'/
     - xform/([gk])wu/$1u/
   dictionary: jyut6ping3    # 採用 jyut6ping3.dict 字典
   prism: combo_jyutping
