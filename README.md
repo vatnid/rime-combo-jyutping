@@ -1,4 +1,4 @@
-# 宮保粵拼 Combo Jyutping
+# 宮保粵拼 Combo Jyutping（淵理方案）
 
 配方：℞ `combo-jyutping`  
 授權條款：見 [LICENSE](LICENSE)
