@@ -5,7 +5,7 @@
 
 ## 簡介
 
-宮保粵拼係由[淵維](https://github.com/vatnid)同理烏以[佛振](https://github.com/lotem)嘅[宮保拼音](https://github.com/rime/home/wiki/ComboPinyin)爲基礎設計嘅並擊（chord typing）[粵拼](https://www.jyutping.org/jyutping/)輸入法。呢個輸入法要配合 [Rime](https://rime.im) 使用。除咗 QWERTY 鍵盤之外，本方案亦支援 Dvorak 鍵盤。
+宮保粵拼係由[淵維](https://github.com/vatnid)同[理烏](https://github.com/kaenif)以[佛振](https://github.com/lotem)嘅[宮保拼音](https://github.com/rime/home/wiki/ComboPinyin)爲基礎設計嘅並擊（chord typing）[粵拼](https://www.jyutping.org/jyutping/)輸入法。呢個輸入法要配合 [Rime](https://rime.im) 使用。除咗 QWERTY 鍵盤之外，本方案亦支援 Dvorak 鍵盤。
 
 咩係 chord typing？一般嘅粵拼輸入法係要逐個字母輸入，就算打得快都要順次序輸入字母。Chord typing 不同之處係你只要撳啱同一個 combination 嘅掣，唔使理次序都可以打到想要嘅音節，就好似彈鋼琴演奏和弦（彈 chord）一樣。
 
