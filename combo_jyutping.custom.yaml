@@ -1,21 +1,14 @@
 # Dvorak
 
 patch:
-  chord_composer/alphabet: "o,qe.jupkiyxdbftcwnrhgm "   # Dvorak (1/4)
+  chord_composer/alphabet:
+    "o,qe.jupkiyxdbftcwnrhgm "
   chord_composer/algebra:
+    - xlit|o,qe.jupkiyxdbftcwnrhgm |sczhlfgdbktpoeAuiIOyNnma|
+    - xform/^c$/,/
+    - xform/^l$/./
 
-    # 將物理鍵盤嘅字符對應宮保粵拼嘅 layout
-
-    # |s|w|x|d|e|c|f|r|v|g|t|b|h|y|n|k|i|,|l|o|j|u|m| |  # QWERTY
-    # |s|c|z|h|l|f|g|d|b|k|t|p|o|e|A|u|i|I|O|y|N|n|m|a|  # 宮保粵拼
-    # |o|,|q|e|.|j|u|p|k|i|y|x|d|b|f|t|c|w|n|r|h|g|m| |  # Dvorak
-
-    - xlit|o,qe.jupkiyxdbftcwnrhgm |sczhlfgdbktpoeAuiIOyNnma|   # Dvorak (2/4)
-
-
-    # 單撳空白、逗號、句號
-    - xform/^c$/,/   # Dvorak (3/4)
-    - xform/^l$/./   # Dvorak (4/4)
+################################ 忽略下面嘅嘢 ###################################
 
     # 輔助 I 掣
     - xform/I/i/
