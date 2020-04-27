@@ -58,13 +58,12 @@ speller:
   alphabet: zyxwvutsrqponmlkjihgfedcba
   delimiter: " '"
   algebra:
-    - derive/g(u[int]?[123456])/gw$1/
-    - derive/k(u[int]?[123456])/kw$1/
+    - derive/g(u[int]?[123456])/gw$1/   # gu- = gwu-
+    - derive/k(u[int]?[123456])/kw$1/   # ku- = kwu-
     - derive/([123456])//
     # 合併某幾組韻母
     - derive/aa([ptk])/a$1/         # aap/aat/aak = ap/at/ak
     - derive/ei/i/                  # ei = i
-    - derive/gu(^ng)//
     - derive/ou/u/                  # ou = u
     - derive/e(u|m|ng?|p|t|k)/i$1/  # e- = i-
     - erase/^xx$/
@@ -269,6 +268,11 @@ chord_composer:
     - xform/^(.*)$/[$1]/
 
 translator:
+  preedit_format:
+    - xform/([nls])i'/$1(e)i'/
+    - xform/(^|')([bpmfdtlgkhzcsjw]|ng?)?(w?)a([ptk])/$1$2$3(a)a$4/
+    - xform/gu'/g(o)u'/
+    - xform/([gk])wu/$1u/
   dictionary: jyut6ping3    # 採用 jyut6ping3.dict 字典
   prism: combo_jyutping
 
