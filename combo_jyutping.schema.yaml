@@ -72,21 +72,15 @@ chord_composer:
   # 字母表，包含用嚟撳 chord 嘅掣
   # 撳掣雖然有先後，但係撳 chord 嗰陣，一律以字母表嘅順序排列
 
-  alphabet: "swxdecfrvgtbhynki,lojum "     # QWERTY (1/3)
-  # alphabet: "o,qe.jupkiyxdbftcwnrhgm "     # Dvorak (1/4)
+  alphabet: "swxdecfrvgtbhynki,lojum "
 
   # 拼寫運算規則，將一組 chord 嘅編碼轉換爲拼音音節
   algebra:
-
+    
     # 將物理鍵盤嘅字符對應宮保粵拼嘅 layout
-
     # |s|w|x|d|e|c|f|r|v|g|t|b|h|y|n|k|i|,|l|o|j|u|m| |  # QWERTY
     # |s|c|z|h|l|f|g|d|b|k|t|p|o|e|A|u|i|I|O|y|N|n|m|a|  # 宮保粵拼
-    # |o|,|q|e|.|j|u|p|k|i|y|x|d|b|f|t|c|w|n|r|h|g|m| |  # Dvorak
-
-    - xlit|swxdecfrvgtbhynki,lojum |sczhlfgdbktpoeAuiIOyNnma|   # QWERTY (2/3)
-    # - xlit|o,qe.jupkiyxdbftcwnrhgm |sczhlfgdbktpoeAuiIOyNnma|   # Dvorak (2/4)
-
+    - xlit|swxdecfrvgtbhynki,lojum |sczhlfgdbktpoeAuiIOyNnma|
 
     # 單撳空白、逗號、句號
     - xform/^a$/ /
