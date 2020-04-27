@@ -5,7 +5,7 @@
 schema:
   schema_id: combo_jyutping
   name: 宮保粵拼
-  version: "2020.03.26"
+  version: "2020.03.27"
   author:
     - 淵維 <systemx637@gmail.com>   # 方案設計、編程
     - 理烏 <iaskaaca@gmail.com>     # 方案設計、美術
