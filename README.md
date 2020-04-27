@@ -1,6 +1,6 @@
 # 宮保粵拼 Combo Jyutping（淵理方案）
 
-配方：℞ `combo-jyutping`  
+配方：℞ `vatnid/combo-jyutping`  
 授權條款：見 [LICENSE](LICENSE)
 
 ## 簡介
@@ -11,10 +11,10 @@
 
 ## 安裝
 
-1. 安裝 [Rime](https://rime.im/download/)
-2. 安裝 ℞ **`jyut6ping3`** [粵拼方案（有聲調版）](https://github.com/rime/rime-cantonese)
-3. 下載 `combo_jyutping.schema.yaml`
-4. 放入自己 Rime 嘅[用戶文件夾](https://github.com/rime/home/wiki/RimeWithSchemata#rime-%E4%B8%AD%E7%9A%84%E6%95%B8%E6%93%9A%E6%96%87%E4%BB%B6%E5%88%86%E4%BD%88%E5%8F%8A%E4%BD%9C%E7%94%A8)入面，再[重新部署](https://github.com/rime/home/wiki/CustomizationGuide#%E9%87%8D%E6%96%B0%E4%BD%88%E7%BD%B2%E7%9A%84%E6%93%8D%E4%BD%9C%E6%96%B9%E6%B3%95)
+首先安裝 [Rime](https://rime.im/download/) 同埋[粵拼方案](https://github.com/rime/rime-cantonese)。
+
+之後可以係用[東風破](https://github.com/rime/plum)安裝指令：`bash rime-install vatnid/combo-jyutping`，  
+亦都可以人手下載 `combo_jyutping.schema.yaml`，再放入自己 Rime 嘅[用戶文件夾](https://github.com/rime/home/wiki/RimeWithSchemata#rime-%E4%B8%AD%E7%9A%84%E6%95%B8%E6%93%9A%E6%96%87%E4%BB%B6%E5%88%86%E4%BD%88%E5%8F%8A%E4%BD%9C%E7%94%A8)入面，再[重新部署](https://github.com/rime/home/wiki/CustomizationGuide#%E9%87%8D%E6%96%B0%E4%BD%88%E7%BD%B2%E7%9A%84%E6%93%8D%E4%BD%9C%E6%96%B9%E6%B3%95)。
 
 ### Dvorak 鍵盤
 
