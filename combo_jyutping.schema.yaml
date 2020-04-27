@@ -1,18 +1,18 @@
 # Rime schema
 # Encoding: utf-8
-# 呢個 file 係修改自佛振嘅 compo_pinyin.schema
+# 呢個 file 係修改自佛振嘅 combo_pinyin.schema
 
 schema:
   schema_id: combo_jyutping
-  name: 宮保粵拼
+  name: 宮保粵拼 # 淵理方案
   version: "2020.03.27"
   author:
     - 淵維 <systemx637@gmail.com>   # 方案設計、編程
     - 理烏 <iaskaaca@gmail.com>     # 方案設計、美術
   description: |
-    以佛振嘅宮保拼音爲基礎嘅粵拼並擊（chord typing，即係同時撳多過一個掣）輸入法
-    需要配合 jyut6ping3.dict.yaml 使用
-    宮保拼音介紹：https://github.com/rime/home/wiki/ComboPinyin
+    網頁：https://github.com/vatnid/rime-combo-jyutping
+    宮保粵拼係由淵維同理烏以佛振嘅宮保拼音爲基礎設計嘅並擊（chord typing）粵拼輸入法，
+    需要配合 jyut6ping3.dict 使用。
     特別鳴謝：擇言
 
 switches:
@@ -30,7 +30,7 @@ engine:
   processors:
     - ascii_composer
     - recognizer
-    - chord_composer  # 實現並擊輸入
+    - chord_composer  # 並擊輸入 engine
     - key_binder
     - speller
     - punctuator
@@ -58,14 +58,14 @@ speller:
   alphabet: zyxwvutsrqponmlkjihgfedcba
   delimiter: " '"
   algebra:
+    # 臨時更改字典
     - derive/g(u[int]?[123456])/gw$1/   # gu- = gwu-
     - derive/k(u[int]?[123456])/kw$1/   # ku- = kwu-
-    - derive/([123456])//
-    # 合併某幾組韻母
-    - derive/aa([ptk])/a$1/         # aap/aat/aak = ap/at/ak
-    - derive/ei/i/                  # ei = i
-    - derive/ou/u/                  # ou = u
-    - derive/e(u|m|ng?|p|t|k)/i$1/  # e- = i-
+    - derive/([123456])//               # 無聲調
+    - derive/aa([ptk])/a$1/             # aap/aat/aak = ap/at/ak
+    - derive/ei/i/                      # ei = i
+    - derive/ou/u/                      # ou = u
+    - derive/e(u|m|ng?|p|t|k)/i$1/      # e- = i-
     - erase/^xx$/
 
 chord_composer:
@@ -94,10 +94,8 @@ chord_composer:
     # - xform/^c$/,/   # Dvorak (3/4)
     # - xform/^l$/./   # Dvorak (4/4)
 
-
     # 輔助 I 掣
     - xform/I/i/
-
 
     # 聲母
     - xform/^hgk/Kw/
@@ -110,7 +108,6 @@ chord_composer:
     - xform/^p/P/   # P = p 聲母
     - xform/^t/T/   # T = t 聲母
     - xform/^k/K/   # K = k 聲母
-
 
     # 聲母 + 入聲 = 音節 shortcut
     - xform/^ba$/bin/   # bin
@@ -210,7 +207,7 @@ chord_composer:
   # 撳完 chord 嘅顯示
   output_format:
 
-    # 有效音節加「'」
+    # 有效音節加 apostrophe
 
     # b p m f
     - xform/^([bpm])(aang?|aa[iutk]?|ang?|a[iutk]|eng|ei?|ing?|i[utk]?|ong|o[uk]?|ung?|u[itk]?)$/$1$2'/
