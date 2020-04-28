@@ -74,12 +74,13 @@ chord_composer:
   alphabet: "swxdecfrvgtbhynki,lojum "
 
   algebra:
-
+    
     # 將物理鍵盤嘅字符對應宮保粵拼嘅 layout
+    - xlit|swxdecfrvgtbhynki,lojum |sczhlfgdbktpoeAuiIOyNnma|
+
     # |s|w|x|d|e|c|f|r|v|g|t|b|h|y|n|k|i|,|l|o|j|u|m| |  # QWERTY
     # |s|c|z|h|l|f|g|d|b|k|t|p|o|e|A|u|i|I|O|y|N|n|m|a|  # 宮保粵拼
 
-    - xlit|swxdecfrvgtbhynki,lojum |sczhlfgdbktpoeAuiIOyNnma|
 
     # 單撳空白、逗號、句號
     - xform/^a$/ /
