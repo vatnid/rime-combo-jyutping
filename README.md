@@ -5,7 +5,7 @@
 
 ## 簡介
 
-宮保粵拼係由[淵維](https://github.com/vatnid)同[理烏](https://github.com/kaenif)以[佛振](https://github.com/lotem)嘅[宮保拼音](https://github.com/rime/home/wiki/ComboPinyin)爲基礎設計嘅並擊（chord typing）[粵拼](https://www.jyutping.org/jyutping/)輸入法。呢個輸入法要配合 [Rime](https://rime.im) 使用。除咗 QWERTY 鍵盤之外，本方案亦支援 Dvorak 鍵盤。
+宮保粵拼係由[淵維](https://github.com/vatnid)同[理烏](https://github.com/kaenif)以[佛振](https://github.com/lotem)嘅[宮保拼音](https://github.com/rime/home/wiki/ComboPinyin)爲基礎設計嘅並擊（chord typing）[粵拼](https://www.jyutping.org/jyutping/)輸入法。呢個輸入法要配合 [Rime](https://rime.im) 使用。
 
 咩係 chord typing？一般嘅粵拼輸入法係要逐個字母輸入，就算打得快都要順次序輸入字母。Chord typing 不同之處係你只要撳啱同一個 combination 嘅掣，唔使理次序都可以打到想要嘅音節，就好似彈鋼琴演奏和弦（彈 chord）一樣。
 
@@ -16,9 +16,9 @@
 3. 下載 `combo_jyutping.schema.yaml`
 4. 放入自己 Rime 嘅[用戶文件夾](https://github.com/rime/home/wiki/RimeWithSchemata#rime-%E4%B8%AD%E7%9A%84%E6%95%B8%E6%93%9A%E6%96%87%E4%BB%B6%E5%88%86%E4%BD%88%E5%8F%8A%E4%BD%9C%E7%94%A8)入面，再[重新部署](https://github.com/rime/home/wiki/CustomizationGuide#%E9%87%8D%E6%96%B0%E4%BD%88%E7%BD%B2%E7%9A%84%E6%93%8D%E4%BD%9C%E6%96%B9%E6%B3%95)
 
-### Dvorak 鍵盤
+### 非 QWERTY 鍵盤
 
-如果你用嘅係 Dvorak 鍵盤配置，請同時安裝 `combo_jyutping.custom.yaml`。
+如果你用嘅係其他鍵盤配置，請下載同配置 `combo_jyutping.custom.yaml`，並與 `combo_jyutping.schema.yaml` 一拼安裝。
 
 ## 鍵盤配置
 
