@@ -1,14 +1,27 @@
-# Dvorak
+# 教學：移除適當嘅「# 」以啓用其他鍵盤
 
 patch:
   chord_composer/alphabet:
-    "o,qe.jupkiyxdbftcwnrhgm "
+    # "swxdecfrvgtbhznki,lojum "                                  # QWERTZ
+    # "szxdecfrvgtbhynki;loju, "                                  # AZERTY
+    # "o,qe.jupkiyxdbftcwnrhgm "                                  # Dvorak
+
   chord_composer/algebra:
-    - xlit|o,qe.jupkiyxdbftcwnrhgm |sczhlfgdbktpoeAuiIOyNnma|
-    - xform/^c$/,/
-    - xform/^l$/./
+    # - xlit|swxdecfrvgtbhznki,lojum |sczhlfgdbktpoeAuiIOyNnma|   # QWERTZ
+    # - xform/^I$/,/                                              # QWERTZ
+
+    # - xlit|szxdecfrvgtbhynki;loju, |sczhlfgdbktpoeAuiIOyNnma|   # AZERTY
+    # - xform/^m$/,/                                              # AZERTY
+    # - xform/^I$/;/                                              # AZERTY
+
+    # - xlit|o,qe.jupkiyxdbftcwnrhgm |sczhlfgdbktpoeAuiIOyNnma|   # Dvorak
+    # - xform/^c$/,/                                              # Dvorak
+    # - xform/^l$/./                                              # Dvorak
 
 ################################ 忽略下面嘅嘢 ###################################
+
+    # 單撳空白
+    - xform/^a$/ /
 
     # 輔助 I 掣
     - xform/I/i/
