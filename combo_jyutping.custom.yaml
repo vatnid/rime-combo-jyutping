@@ -1,134 +1,18 @@
-# 教學：移除適當嘅「# 」以啓用其他鍵盤
+# 教學：移除適當嘅 # 號以啓用其他鍵盤
 
 patch:
-  chord_composer/alphabet:
-    # "swxdecfrvgtbhznki,lojum "                                  # QWERTZ
-    # "szxdecfrvgtbhynki;loju, "                                  # AZERTY
-    # "o,qe.jupkiyxdbftcwnrhgm "                                  # Dvorak
+  # QWERTZ
+  # chord_composer/alphabet: "swxdecfrvgtbhznki,lojum "
+  # chord_composer/algebra/@0: xlit|swxdecfrvgtbhznki,lojum |sczhlfgdbktpoeAuiIOyNnma|
 
-  chord_composer/algebra:
-    # - xlit|swxdecfrvgtbhznki,lojum |sczhlfgdbktpoeAuiIOyNnma|   # QWERTZ
-    # - xform/^I$/,/                                              # QWERTZ
+  # AZERTY
+  # chord_composer/alphabet: "szxdecfrvgtbhynki;loju, "
+  # chord_composer/algebra/@0: xlit|szxdecfrvgtbhynki;loju, |sczhlfgdbktpoeAuiIOyNnma|
+  # chord_composer/algebra/@2: xform/^m$/,/
+  # chord_composer/algebra/@after 2: xform/^I$/;/
 
-    # - xlit|szxdecfrvgtbhynki;loju, |sczhlfgdbktpoeAuiIOyNnma|   # AZERTY
-    # - xform/^m$/,/                                              # AZERTY
-    # - xform/^I$/;/                                              # AZERTY
-
-    # - xlit|o,qe.jupkiyxdbftcwnrhgm |sczhlfgdbktpoeAuiIOyNnma|   # Dvorak
-    # - xform/^c$/,/                                              # Dvorak
-    # - xform/^l$/./                                              # Dvorak
-
-################################ 忽略下面嘅嘢 ###################################
-
-    # 單撳空白
-    - xform/^a$/ /
-
-    # 輔助 I 掣
-    - xform/I/i/
-
-    # 聲母
-    - xform/^hgk/Kw/
-    - xform/^shg/gw/
-    - xform/^fb/M/  # M = m 聲母
-    - xform/^ld/Q/  # Q = n 聲母
-    - xform/^hg/G/  # G = ng 聲母
-    - xform/^sh/j/
-    - xform/^zf/w/
-    - xform/^p/P/   # P = p 聲母
-    - xform/^t/T/   # T = t 聲母
-    - xform/^k/K/   # K = k 聲母
-
-    # 聲母 + 入聲 = 音節 shortcut
-    - xform/^ba$/bin/   # bin
-    - xform/^Pa$/puNa/  # puk
-    - xform/^Ma$/Mou/   # mou
-    - xform/^fa$/fAn/   # faan
-    - xform/^da$/dou/   # dou
-    - xform/^Ta$/TuN/   # tung
-    - xform/^Qa$/Qei/   # nei
-    - xform/^la$/lia/   # lai
-    - xform/^ga$/ge/    # ge
-    - xform/^Ka$/KiO/   # keoi
-    - xform/^Ga$/Go/    # ngo
-    - xform/^ha$/hia/   # hai
-    - xform/^gwa$/gwo/  # gwo
-    - xform/^Kwa$/Kwn/  # kwan
-    - xform/^za$/zua/   # zau
-    - xform/^ca$/cin/   # cin
-    - xform/^sa$/sin/   # sin
-    - xform/^ja$/jua/   # jau
-    - xform/^wa$/wuO/   # wui
-
-    # 以下開始轉換韻母
-
-    # ut 三鍵 shortcut
-    - xform/ein$/una/
-    - xform/eina$/una/  # 對照表唔顯示
-
-    # ok 三鍵 shortcut
-    - xform/ouN$/oNa/
-    - xform/ouNa$/oNa/  # 對照表唔顯示
-
-    # aan aat 三鍵 shortcut
-    - xform/Aim/An/
-    - xform/Aima/Ana/
-
-    # eon eot eoi 三鍵 shortcut
-    - xform/iyn$/On/
-    - xform/iyna$/Ona/
-    - xform/uON$/iO/    # 注意 iO 唔係 Oi，因爲要跟字母次序
-
-    # un ut 二鍵 shortcut
-    - xform/en$/un/
-    - xform/ena$/una/
-
-    # 入聲
-    - xform/Na$/k/
-    - xform/na$/t/
-    - xform/ma$/p/
-
-    # ai au
-    - xform/ia$/ai/
-    - xform/ua$/au/
-
-    # iu ui
-    - xform/iy$/iu/
-    - xform/uO$/ui/
-
-    # O 要串做 eo 嘅情況
-    - xform/iO$/eoi/    # 注意 iO 唔係 Oi，因爲要跟字母次序
-    - xform/On$/eon/
-    - xform/Ot$/eot/
-
-    # m n ng 掣加返 a 元音
-    - xform/^p$/ap/
-    - xform/^t$/at/
-    - xform/^k$/ak/
-    - xform/^m$/am/
-    - xform/^n$/an/
-    - xform/^N$/ang/
-    - xform/([^aeiouyAO])p$/$1ap/
-    - xform/([^aeiouyAO])t$/$1at/
-    - xform/([^aeiouyAO])k$/$1ak/
-    - xform/([^aeiouyAO])m$/$1am/
-    - xform/([^aeiouyAO])n$/$1an/
-    - xform/([^aeiouyAO])N$/$1aN/
-
-    # i yu u 加 j/w 聲母
-    - xform/^([iy])/j$1/
-    - xform/^(u$|u[int])/w$1/
-
-    # 齋撳聲母補返 -aa
-    - xform/^([bPfdTQlgKhjwzcs]w?)$/$1aa/
-
-    # 最後嘅 orthography 轉換
-    - xform/N/ng/
-    - xform/A/aa/
-    - xform/O/oe/
-    - xform/y/yu/
-    - xform/M/m/
-    - xform/Q/n/
-    - xform/G/ng/
-    - xform/P/p/
-    - xform/T/t/
-    - xform/K/k/
+  # Dvorak
+  # chord_composer/alphabet: "o,qe.jupkiyxdbftcwnrhgm "
+  # chord_composer/algebra/@0: xlit|o,qe.jupkiyxdfbtcwnrhgm |sczhlfgdbktpoeAuiIOyNnma|
+  # chord_composer/algebra/@2: xform/^c$/,/
+  # chord_composer/algebra/@after 2: xform/^l$/./
