@@ -7,7 +7,7 @@
 
 宮保粵拼係由[淵維](https://github.com/vatnid)同[理烏](https://github.com/kaenif)以[佛振](https://github.com/lotem)嘅[宮保拼音](https://github.com/rime/home/wiki/ComboPinyin)爲基礎設計嘅並擊（chord typing）[粵拼](https://www.jyutping.org/jyutping/)輸入法。呢個輸入法要配合 [Rime](https://rime.im) 使用。
 
-咩係 chord typing？一般嘅粵拼輸入法係要逐個字母輸入，就算打得快都要順次序輸入字母。Chord typing 不同之處係你只要撳啱同一個 combination 嘅掣，唔使理次序都可以打到想要嘅音節，就好似彈鋼琴演奏和弦（彈 chord）一樣。
+咩係 chord typing？一般嘅粵拼輸入法係要逐個字母輸入，就算打得快都要順次序輸入字母。Chord typing 不同之處係你要**同時間撳幾個掣**，只要撳啱同一個組合，唔使理次序都可以打到想要嘅音節，就好似彈鋼琴演奏和弦（彈 chord）一樣。
 
 ## 安裝
 
@@ -34,19 +34,16 @@
 
 ### 例子
 
-例如你想打「光復香港時代革命」八個字，首先你要知道每一個音節嘅粵拼，之後就可以開始拆聲母韻母。例如第一個「光」字係 gwong，首先左手要打聲母 gw-，即係 layout 上面嘅 `[s][h][g]` 三個掣。韻母係 -ong，右手可以直接打 `[o][-ng]`。所以只要 `[s][h][g][o][-ng]` 五個掣同時撳，就可以出到 gwong 呢個音節。
+例如你想打「信政府 唔驚」五個字，首先你要知道每一個音節嘅粵拼，之後就可以開始拆聲母韻母。例如第一個「信」字係 seon，首先左手要打聲母 s-，咁啱都係 layout 上嘅 `[s]` 掣。韻母係 -eon，根據 layout，右手就要打 `[-n][i][u]` 三個掣。所以只要 `[s][-n][i][u]` 四個掣同時撳，就可以出到 seon 呢個音節。
 
 其他音節可以照板煮碗：  
-光 gwong = `[s][h][g][o][-ng]`  
-復 fuk = `[f][u][-ng][入]` （ ← 呢度韻尾係 -k，鍵盤空間所限所以要打 [-ng] 再加入聲掣 [入]）  
-香 hoeng = `[h][oe][-ng]`  
-港 gong = `[g][o][-ng]`  
-時 si = `[s][i]`  
-代 doi = `[d][o][i]`  
-革 gaak = `[g][aa][-ng][入]`  
-命 ming = `[f][b][i][-ng]`  
+信 = `[s][-n][i][u]`  
+政 = `[z][i][-ng]`
+府 = `[f][u]`
+唔 = `[f][b]`
+怕 = `[p][aa]`
 
-即係話，只要撳八個「chord」就可以打到八個字出嚟喇！
+即係話，只要撳五個「chord」就可以打到五個字出嚟喇！
 
 ### 特殊組合
 
